@@ -7,11 +7,11 @@
 
 
 import sys
-import urlib.requests
+import urllib.request
 
 if __name__ == '__main__':
     for arg in sys.argv[1].split(","):
         print(arg)
-        r = urlib.request.urlopen(arg).read()
+        r = urllib.request.urlopen(arg).read()
         print(r)
 
