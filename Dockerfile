@@ -3,6 +3,6 @@ FROM python:3.6-jessie
 WORKDIR /opt
 ADD / /opt
 RUN pip install -r requirements.txt
-ENV URL="https://www.opentable.com, https://www.opentable.com/m/best-restaurants-in-america-for-2017/"
+ENV URL_FILE=/home/ubuntu/url_list.txt
 
 ENTRYPOINT python -u /opt/main_loop.py $URL
