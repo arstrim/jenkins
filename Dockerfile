@@ -5,4 +5,4 @@ ADD / /opt
 RUN pip install -r requirements.txt
 ENV URL="https://www.opentable.com, https://www.opentable.com/m/best-restaurants-in-america-for-2017/"
 
-ENTRYPOINT python -u /opt/main.py $URL
+ENTRYPOINT python -u /opt/main_loop.py $URL
