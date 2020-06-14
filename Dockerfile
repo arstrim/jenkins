@@ -5,4 +5,4 @@ ADD / /opt
 RUN pip install -r requirements.txt
 
 
-ENTRYPOINT ["python", "-u", "/opt/main.py"]
+ENTRYPOINT ["python", "-u", "/opt/main.py", "6"]
