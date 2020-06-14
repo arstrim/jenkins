@@ -5,4 +5,4 @@ ADD / /opt
 RUN pip install -r requirements.txt
 ENV number=10
 
-ENTRYPOINT ["python", "-u", "/opt/main.py", $number]
+ENTRYPOINT python -u /opt/main.py $number
