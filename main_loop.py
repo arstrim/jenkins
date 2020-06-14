@@ -5,7 +5,11 @@ if __name__ == '__main__':
 	urls = sys.argv[1].split(",")
 	for url in urls:
 		print(url)
-		r = urllib.request.urlopen(url).read()
-		print(r)
+        try:
+		    r = urllib.request.urlopen(url).read()
+		    print(r)
+        except ValueError:
+            print("Not posible to parse html")
+            sys.exit()
 
 
